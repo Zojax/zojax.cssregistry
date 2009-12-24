@@ -1,0 +1,83 @@
+<configure
+   xmlns="http://namespaces.zope.org/zope"
+   xmlns:browser="http://namespaces.zope.org/browser"
+   i18n_domain="zojax.cssregistry">
+
+  <utility
+     name="cssregistry"
+     provides="z3c.zrtresource.interfaces.IZRTCommandFactory"
+     component=".command.cssregistry_factory" />
+
+  <class class=".registry.CSSRegistry">
+    <require
+       permission="zope.Public"
+       attributes="name title"
+       interface="zope.interface.common.mapping.IEnumerableMapping" />
+  </class>
+
+  <class class=".property.Property">
+    <require
+       permission="zope.Public"
+       interface=".interfaces.ICSSProperty" />
+    <require
+       permission="zope.Public"
+       set_schema=".interfaces.ICSSProperty" />
+  </class>
+
+  <class class=".property.CSSProperty">
+    <require
+       permission="zope.Public"
+       interface=".interfaces.ICSSProperty" />
+    <require
+       permission="zope.Public"
+       set_schema=".interfaces.ICSSProperty" />
+  </class>
+
+  <!-- default proeprties -->
+  <browser:cssregistry title="Default css properties">
+    <property name="backgroundColor" value="#F8F8F8" />
+    <property name="contentBackgroundColor" value="white" />
+
+    <property name="fontFamily"
+	      value="Lucida Grande, Verdana, Tahoma, Helvetica, Sans-Serif" />
+    <property name="headingFontFamily"
+	      value="Lucida Grande, Verdana, Tahoma, Helvetica, Sans-Serif" />
+    <property name="monospaceFontFamily"
+	      value="Monaco, Courier New, Courier, monospace" />
+
+    <property name="fontColor" value="#252525" />
+    <property name="fontBaseSize" value="70%" />
+    <property name="fontSmallSize" value="90%" />
+    
+    <property name="linkColor" value="#003C75"/>
+    <property name="linkActiveColor" value="Red" />
+    <property name="linkVisitedColor" value="Purple" />
+    
+    <property name="borderWidth" value="1px" />
+    <property name="borderStyle" value="solid" />
+    <property name="borderStyleAnnotations" value="solid" />
+    
+    <property name="globalFontColor" value="#71A0CD" />
+    <property name="globalBorderColor" value="#B0C7DD" />
+    <property name="globalBackgroundColor" value="#E2EFFC" />
+    <property name="globalExtraColor" value="#6088AE" />
+    <property name="globalExtraBorderColor" value="#6088AE" />
+
+    <property name="discreetColor" value="#76797C" />
+    
+    <property name="contentViewBorderColor" value="#A5A5A5" />
+    <property name="contentViewBackgroundColor" value="#E4E4E4" />
+    <property name="contentViewFontColor" value="#898989" />
+
+    <property name="inputFontColor" value="#252525" />
+
+    <property name="textTransform" value="lowercase" />
+
+    <property name="evenRowBackgroundColor" value="#F3F7FD" />
+    <property name="oddRowBackgroundColor" value="transparent" />
+
+    <property name="notifyBorderColor" value="#ffa500" />
+    <property name="notifyBackgroundColor" value="#ffce7b" />
+  </browser:cssregistry>
+
+</configure>

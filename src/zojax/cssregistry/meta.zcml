@@ -1,0 +1,23 @@
+<configure
+   xmlns="http://namespaces.zope.org/zope"
+   xmlns:meta="http://namespaces.zope.org/meta">
+
+  <meta:directives namespace="http://namespaces.zope.org/browser">
+    <meta:complexDirective
+       name="cssregistry"
+       schema=".zcml.ICSSRegistryDirective"
+       handler=".zcml.cssregistryHandler">
+
+      <meta:subdirective
+         name="property"
+         schema=".zcml.ICSSPropertySubDirective" />
+
+    </meta:complexDirective>
+
+    <meta:directive
+       name="cssproperty"
+       schema=".zcml.ICSSPropertyDirective"
+       handler=".zcml.csspropertyHandler" />
+  </meta:directives>
+
+</configure>
