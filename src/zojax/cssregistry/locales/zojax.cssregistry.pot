@@ -1,0 +1,75 @@
+##############################################################################
+#
+# Copyright (c) 2003-2004 Zope Corporation and Contributors.
+# All Rights Reserved.
+#
+# This software is subject to the provisions of the Zope Public License,
+# Version 2.1 (ZPL).  A copy of the ZPL should accompany this distribution.
+# THIS SOFTWARE IS PROVIDED "AS IS" AND ANY AND ALL EXPRESS OR IMPLIED
+# WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+# WARRANTIES OF TITLE, MERCHANTABILITY, AGAINST INFRINGEMENT, AND FITNESS
+# FOR A PARTICULAR PURPOSE.
+#
+##############################################################################
+msgid ""
+msgstr ""
+"Project-Id-Version: Development/Unknown\n"
+"POT-Creation-Date: Thu Dec  8 22:47:49 2011\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Zope 3 Developers <zope3-dev@zope.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: zope/app/locales/extract.py\n"
+
+#: src/zojax/cssregistry/interfaces.py:30
+#: src/zojax/cssregistry/interfaces.py:45
+msgid "Name"
+msgstr ""
+
+#: src/zojax/cssregistry/interfaces.py:31
+msgid "CSS Registry name"
+msgstr ""
+
+#: src/zojax/cssregistry/interfaces.py:36
+#: src/zojax/cssregistry/interfaces.py:50
+msgid "Title"
+msgstr ""
+
+#: src/zojax/cssregistry/interfaces.py:37
+msgid "CSS Registry title"
+msgstr ""
+
+#: src/zojax/cssregistry/interfaces.py:46
+msgid "Property name"
+msgstr ""
+
+#: src/zojax/cssregistry/interfaces.py:51
+msgid "Property title"
+msgstr ""
+
+#: src/zojax/cssregistry/interfaces.py:55
+msgid "Description"
+msgstr ""
+
+#: src/zojax/cssregistry/interfaces.py:56
+msgid "Property description"
+msgstr ""
+
+#: src/zojax/cssregistry/interfaces.py:60
+msgid "Value"
+msgstr ""
+
+#: src/zojax/cssregistry/interfaces.py:61
+msgid "Property value"
+msgstr ""
+
+#: src/zojax/cssregistry/interfaces.py:65
+msgid "Type"
+msgstr ""
+
+#: src/zojax/cssregistry/interfaces.py:66
+msgid "Property type. (color, font, size)"
+msgstr ""
+
